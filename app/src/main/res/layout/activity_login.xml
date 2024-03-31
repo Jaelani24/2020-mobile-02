@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
+
+
 
     <ImageView
         android:id="@+id/layout1"
@@ -15,6 +17,21 @@
         android:src="@drawable/red_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/back1"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:onClick="clickBack"
+        android:src="@drawable/left_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -38,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="Welcome Back"
+        android:text="Continuing as"
         android:textColor="#313131"
         android:textSize="30sp"
         app:layout_constraintHorizontal_bias="0.202"
@@ -52,44 +69,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="at largest Servies marketplace"
+        android:text="Service Provider"
         android:textColor="#313131"
-        android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.298"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.242"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/welcome_text" />
 
-    <TextView
-        android:id="@+id/note2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:fontFamily="@font/futura_pt_demibold"
-        android:text="Enter as a"
-        android:textColor="#8A7D7D"
-        android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/note1" />
-
     <Button
-        android:id="@+id/btn1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn0"
+        android:layout_width="124dp"
+        android:layout_height="51dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
-        android:background="@drawable/btn_red_large"
-        android:text="User"
+        android:background="@drawable/btn_white_large"
+        android:text="Login"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="#DD1818"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/note2" />
+        app:layout_constraintTop_toBottomOf="@id/note1" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_red_medium"
+        android:text="Register"
+        android:onClick="clickNext"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/note1" />
 
     <Button
         android:id="@+id/btn2"
@@ -99,8 +120,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/btn_white_large"
-        android:text="service provider"
-        android:onClick="clickLogin"
+        android:text="Continue With Google"
         android:textAllCaps="false"
         android:textColor="#DD1818"
         android:textSize="18sp"
@@ -109,18 +129,67 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn1" />
 
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="458dp"
+        android:onClick="clickBack"
+        android:src="@drawable/google_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_blue_large"
+        android:text="Continue With Facebook"
+        android:textAllCaps="false"
+        android:textColor="#1867DD"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn2" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="514dp"
+        android:onClick="clickBack"
+        android:src="@drawable/fb_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn2"
+        tools:ignore="MissingConstraints" />
+
+
     <TextView
         android:id="@+id/note3"
         android:layout_width="147dp"
         android:layout_height="25dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Enter as a guest"
         android:textColor="#8A7D7D"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn2" />
+        app:layout_constraintTop_toBottomOf="@id/btn3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
