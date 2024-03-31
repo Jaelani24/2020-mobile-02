@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/back1"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:onClick="clickBack"
+        android:src="@drawable/arrow_left_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/judul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Edit"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/judul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Personal Info"
+        android:textColor="#313131"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back1"
+        />
+
+    <ImageView
+        android:id="@+id/log_prof"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="120dp"
+        android:onClick="clickBack"
+        android:src="@drawable/profile_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/log_edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="170dp"
+        android:onClick="clickBack"
+        android:src="@drawable/edit_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/note1"
+        android:layout_width="147dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="About me"
+        android:textColor="#8A7D7D"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul1" />
+
+    <TextView
+        android:id="@+id/isi1"
+        android:layout_width="329dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="245dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="I think this is one of the most important qualities to have as a drive: Show responsibility for other  traffic participants."
+        android:textColor="#131313"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/note1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/garis1"
+        android:layout_width="450dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="310dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isi1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/note2"
+        android:layout_width="147dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="330dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Full Name"
+        android:textColor="#8A7D7D"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis1" />
+
+    <TextView
+        android:id="@+id/isi2"
+        android:layout_width="240dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="330dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Jaelani"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/garis2"
+        android:layout_width="450dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="370dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isi2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/note3"
+        android:layout_width="147dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="390dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Email"
+        android:textColor="#8A7D7D"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis2" />
+
+    <TextView
+        android:id="@+id/isi3"
+        android:layout_width="240dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="390dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Jthebluess@gmail.com"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/garis3"
+        android:layout_width="450dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="430dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isi3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/note4"
+        android:layout_width="147dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="450dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Gender"
+        android:textColor="#8A7D7D"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis3" />
+
+    <TextView
+        android:id="@+id/isi4"
+        android:layout_width="240dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="450dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Male"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/garis4"
+        android:layout_width="450dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="490dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isi4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/note5"
+        android:layout_width="147dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="510dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Phone No."
+        android:textColor="#8A7D7D"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis4" />
+
+    <TextView
+        android:id="@+id/isi5"
+        android:layout_width="240dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="510dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="+62 858 46722495"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/garis5"
+        android:layout_width="450dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="550dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isi5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/note6"
+        android:layout_width="147dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="570dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="City"
+        android:textColor="#8A7D7D"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis5" />
+
+    <TextView
+        android:id="@+id/isi6"
+        android:layout_width="240dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="570dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="East Jakarta"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/garis6"
+        android:layout_width="450dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="610dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isi6"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/note7"
+        android:layout_width="147dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="630dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Address"
+        android:textColor="#8A7D7D"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis6" />
+
+    <TextView
+        android:id="@+id/isi7"
+        android:layout_width="240dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="630dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Rawa Terate, Cakung , East Jakarta"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garis6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/garis7"
+        android:layout_width="450dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="670dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isi7"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
